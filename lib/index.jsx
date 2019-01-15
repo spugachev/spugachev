@@ -3,8 +3,11 @@
  * All rights reserved.
  */
 
+import { h, render } from "ink";
+import Main from "./main";
+
 function run() {
-    console.log("Sergey Pugachev");
+    render(<Main />);
 }
 
 exports.run = run;

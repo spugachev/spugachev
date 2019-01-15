@@ -5,5 +5,5 @@
  * All rights reserved.
  */
 
-var lib = require('../lib/index.js');
+var lib = require('../build/index.js');
 lib.run();
