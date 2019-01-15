@@ -4,22 +4,13 @@
  */
 
 import { h, Component, Color, Text, Bold } from "ink";
-import opn from "opn";
 import Box from "ink-box";
 import Image from "ink-image";
 import path from "path";
 import SelectInput from "ink-select-input";
 import Table from "ink-table";
 
-function openUrl(url) {
-    opn(url, { wait: false });
-}
-
 function onSelect(item) {
-    if (item.url) {
-        openUrl(item.url);
-    }
-
     if (item.action) {
         item.action();
     }

@@ -6,10 +6,6 @@ Object.defineProperty(exports, "__esModule", {
 
 var _ink = require("ink");
 
-var _opn = require("opn");
-
-var _opn2 = _interopRequireDefault(_opn);
-
 var _inkBox = require("ink-box");
 
 var _inkBox2 = _interopRequireDefault(_inkBox);
@@ -32,18 +28,12 @@ var _inkTable2 = _interopRequireDefault(_inkTable);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function openUrl(url) {
-    (0, _opn2.default)(url, { wait: false });
-} /**
-   * Copyright Sergey Pugachev
-   * All rights reserved.
-   */
+/**
+ * Copyright Sergey Pugachev
+ * All rights reserved.
+ */
 
 function onSelect(item) {
-    if (item.url) {
-        openUrl(item.url);
-    }
-
     if (item.action) {
         item.action();
     }
